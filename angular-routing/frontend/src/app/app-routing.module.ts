@@ -8,6 +8,7 @@ import { SinginComponent } from './auth/singin/singin.component';
 import { SingupComponent } from './auth/singup/singup.component';
 import { AltaClienteComponent } from './cliente/components/alta-cliente/alta-cliente.component';
 import { ListadoClientesComponent } from './cliente/components/listado-clientes/listado-clientes.component';
+import { SimpleFormComponent } from './formulario/simple-form/simple-form.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/clientes', pathMatch: 'full'},
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'singup', component: SingupComponent},
   {path: 'alta', component: AltaClienteComponent},
   {path: 'clientes', component: ListadoClientesComponent},
+  {path: 'dev', component: SimpleFormComponent},
 ];
 
 @NgModule({
@@ -24,3 +26,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export { routes }

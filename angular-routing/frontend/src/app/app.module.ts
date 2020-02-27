@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 // Modules
 import { AuthModule } from './auth/auth.module';
 import { ClientesModule } from './cliente/clientes.module';
+import { FormularioModule } from './formulario/formulario.module';
+import { GlobalComponentsModule } from './global-components/global-components.module';
 
 @NgModule({
   declarations: [
@@ -14,8 +16,10 @@ import { ClientesModule } from './cliente/clientes.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    GlobalComponentsModule,
     AuthModule,
-    ClientesModule
+    ClientesModule,
+    FormularioModule
   ],
   providers: [],
   bootstrap: [AppComponent]
