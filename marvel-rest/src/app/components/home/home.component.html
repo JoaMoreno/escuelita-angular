@@ -1,0 +1,6 @@
+<div class="container">
+    <a class="card-hero" *ngFor="let Char of Characters" href={{Char.urls[0].url}}>
+        <h1>{{Char.title}}</h1>
+        <img src={{Char.thumbnail.path}}.{{Char.thumbnail.extension}}>
+    </a>
+</div>

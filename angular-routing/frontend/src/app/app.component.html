@@ -1,4 +1,8 @@
-<app-navbar></app-navbar>
+<ul class="nav nav-tabs justify-content-center">
+    <li *ngFor="let link of links" class="nav-item">
+      <a class="nav-link" [routerLink]=link.path routerLinkActive="active">{{link.path}}</a>
+    </li>
+  </ul>
 <div class="container p-5">
     <router-outlet></router-outlet>
 </div>

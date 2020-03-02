@@ -8,11 +8,11 @@ import {routes} from '../../app-routing.module';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  links=routes;
+  links=routes.slice(1);
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.links[1].path);
+    console.log(this.links[0].path);
   }
   
 }

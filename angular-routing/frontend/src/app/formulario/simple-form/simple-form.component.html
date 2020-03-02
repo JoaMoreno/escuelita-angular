@@ -1,1 +1,17 @@
-<p>simple-form works!</p>
+<h1>Formulario</h1>
+
+<form [formGroup]="singupForm" (ngSubmit)="onSubmit(singupForm.value)">
+    <label>Nombre</label>
+    <input formControlName="nombre" type="text">
+    <br>
+    <label>Usuario</label>
+    <input formControlName="usuario" type="text">
+    <br>
+    <label>Email</label>
+    <input formControlName="email" type="email">
+    <br>
+    <label>Contraseña</label>
+    <input formControlName="clave" type="password">
+    <br>
+    <button [disabled]='singupForm.invalid' type="submit">Registrarse</button>
+</form>

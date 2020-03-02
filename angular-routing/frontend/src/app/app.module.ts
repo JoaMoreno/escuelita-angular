@@ -8,6 +8,7 @@ import { AuthModule } from './auth/auth.module';
 import { ClientesModule } from './cliente/clientes.module';
 import { FormularioModule } from './formulario/formulario.module';
 import { GlobalComponentsModule } from './global-components/global-components.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { GlobalComponentsModule } from './global-components/global-components.mo
     GlobalComponentsModule,
     AuthModule,
     ClientesModule,
-    FormularioModule
+    FormularioModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
