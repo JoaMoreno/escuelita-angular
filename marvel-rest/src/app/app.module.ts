@@ -6,11 +6,18 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { MarvelService } from './services/marvel.service';
 import { HttpClientModule } from '@angular/common/http';
+import { RxjsComponent } from './components/rxjs/rxjs.component';
+import { Comunicacion1Component } from './components/comunicacion1/comunicacion1.component';
+import { TogglerComponent } from './components/toggler/toggler.component';
+import { LateralbarComponent } from './components/lateralbar/lateralbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    RxjsComponent,
+    Comunicacion1Component,
+    TogglerComponent,
+    LateralbarComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.sidebar{
+    width: 60px;
+    background: red;
+}
+.is-open{
+    width: 300px;
+}
+:host.is-open {
+    width: 300px;
+  }
