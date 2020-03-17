@@ -1,7 +1,7 @@
 .container-grid{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
 }
 .card{
     overflow: hidden;
@@ -9,9 +9,15 @@
     height: 100%;
     color: white;
     border-radius: 6px;
+    transition: all .3s ease;
 }
-.img img {
-    min-width: 250px;
+.card:hover{
+    transform: scale(1.05,1.05);
+}
+.img{
+    max-height: 250px;
     min-height: 250px;
-    object-fit: cover;
+}
+.img{
+    object-fit: fill;
 }

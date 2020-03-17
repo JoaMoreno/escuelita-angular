@@ -647,6 +647,15 @@ video {
   background-color: #38b2ac;
 }
 
+.btn-danger {
+  background-color: #fc8181;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #f56565;
+}
+
 .cen-y{
   display: flex;
   align-items: center;
